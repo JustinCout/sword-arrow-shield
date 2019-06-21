@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=MedievalSharp&display=swap");
+html {
+  box-sizing: border-box;
+  font-family: "MedievalSharp", cursive;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #d1c9eeb0;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#header {
+  background: #424242;
+  color: #d1d9ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  padding: 10px 0 0 0;
+  height: 80px;
+  box-shadow: 8px 15px 14px #888888;
+  margin: 0 0 100px 0;
+}
+
+#header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+#header h1 {
+  align-self: center;
+}
+
+#header p {
+  align-self: end;
+}
+
+#rulesBtn {
+  font-size: 22px;
+  font-family: "MedievalSharp", cursive;
+  width: 100px;
+  background: #252424;
+  align-self: center;
+  margin: 0 0 0 40px;
+}
+
+#sideMenu {
+  width: 400px;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  height: 300px;
+  top: 90px;
+  right: 0;
+  background-color: rgba(17, 17, 17, 0.253);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#gameRules {
+  width:80%;
+  height:auto;
+  margin:0 0 90px 30px;
+}
+
+.page-wrap {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+#createGameSection {
+  margin: 0 0 15px 0;
+}
+
+#game-login {
+  margin: 100px 0 0 0;
+  border: 3px solid rgb(37, 35, 35);
+  border-radius: 10px;
+  padding: 20px 60px 60px 60px;
+  background: rgb(37, 35, 35);
+  color: #fff;
+}
+
+#game-board {
+  margin: 80px 0 0 0;
+  display: none;
+}
+
+#msg {
+  font-size: 33px;
+  margin: 20px 0 0 0;
+}
+
+.tbox {
+  height: 30px;
+  width: 300px;
+  padding: 5px;
+  border-radius: 9px;
+  border: 1px solid rgba(171, 211, 235, 0.781);
+}
+
+.btn {
+  height: 40px;
+  width: 150px;
+  padding: 6px 10px 6px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(171, 211, 235, 0.781);
+  background: rgb(0, 101, 160);
+  color: #fff;
+}
+
+.btn:hover,
+.tbox:hover {
+  box-shadow: 1px 1px 5px rgb(65, 182, 250);
+}
+
+.weapons {
+  width: 120px;
+  padding: 40px;
+}
+
+#game-board {
+  text-align: center;
+}
+
+.game-item {
+  margin: 0 20px 0 0;
+  background: #d1d9ff;
+  border: 4px solid #00000080;
+  border-radius: 55%;
+}
+
+.game-item:hover {
+  box-shadow: 1px 1px 5px rgb(34, 35, 36);
+}
+
+#submitVal {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#submitBtn {
+  padding: 10px;
+  width: 120px;
+  height: 80px;
+  font-size: 26px;
+  margin: 30px 0 0 0;
+  display: flex;
+}
+
+#postGameBtns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 50px 0 0 0;
+}
+
+#newGameBtn {
+  padding: 10px;
+  width: 100px;
+  height: 60px;
+  font-size: 24px;
+  margin: 0 auto;
+  display: none;
+}
+
+#exitBtn {
+  padding: 10px;
+  width: 100px;
+  height: 60px;
+  border: 1px solid rgba(143, 16, 16, 0.746);
+  background: rgb(143, 16, 16);
+  font-size: 24px;
+  margin: 0 auto;
+  display: none;
+}
+
+#selected-weapon {
+  margin: 25px 0 0 0;
+  font-size: 33px;
+}
+
+#footer {
+  background: #424242;
+  color: #d1d9ff;
+  position: fixed;
+  text-align:center;
+  padding: 10px 0 0 0;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  margin-top:auto;
+}

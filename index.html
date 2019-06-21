@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Sword-Shield-Arrow</title>
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <h1>SWORD - ARROW - SHIELD</h1>
+      <button class="btn" id="rulesBtn" onclick="toggleRules();">RULES</button>
+      </div>
+    </header>
+    <div id="sideMenu">
+      <img id="gameRules" src="assets/sas-game-rules.png" alt="game rules">
+    </div>
+    <div class="page-wrap">
+      <div id="messages">
+        <div id="player1"></div>
+        <div id="player2"></div>
+        <div id="msg"></div>
+        <div id="display-result"></div>
+      </div>
+      <div id="game-login">
+        <h2>CREATE/JOIN</h2>
+        <div id="createGameSection">
+          <input
+            type="text"
+            placeholder="Name"
+            name="playerName"
+            class="tbox"
+            id="playerName"
+          />
+          <button class="btn" id="createGame">Create Battlefield</button>
+        </div>
+        <div id="joinGameSection">
+          <input
+            type="text"
+            placeholder="Name"
+            name="player2Name"
+            class="tbox"
+            id="player2Name"
+          />
+          <input
+            type="text"
+            placeholder="Game ID"
+            name="gameId"
+            class="tbox"
+            id="gameId"
+          />
+          <button class="btn" id="joinGame">Join a Battlefield</button>
+        </div>
+      </div>
+      <div id="game-board">
+        <button class="game-item" id="sword">
+          <img
+            id="sword"
+            class="weapons"
+            src="assets/sword.png"
+            alt="Sword Logo"
+          />
+        </button>
+        <button class="game-item" id="arrow">
+          <img
+            id="arrow"
+            class="weapons"
+            src="assets/arrow.png"
+            alt="Arrow Logo"
+          />
+        </button>
+        <button class="game-item" id="shield">
+          <img
+            id="shield"
+            class="weapons"
+            src="assets/shield.png"
+            alt="Shield Logo"
+          />
+        </button>
+        <div id="selected-weapon"></div>
+        <form id="submitVal">
+          <input type="hidden" name="playerChoice" id="playerChoice" />
+          <input type="submit" value="FIGHT" class="btn" id="submitBtn" />
+        </form>
+        <div id="postGameBtns">
+          <input type="button" value="NEW" class="btn" id="newGameBtn" />
+          <input type="button" value="EXIT" class="btn" id="exitBtn" />
+        </div>
+      </div>
+    </div>
+    <footer id="footer"><p>&copy 2019 Justin Coutinho</p></footer>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>
