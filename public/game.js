@@ -1,6 +1,6 @@
 window.onload = () => {
-  //var socket = io.connect("https://sword-arrow-shield.herokuapp.com/");
-  var socket = io.connect("http://localhost:3000/");
+  let socket = io.connect("https://sword-arrow-shield.herokuapp.com/");
+  //let socket = io.connect("http://localhost:3000/");
   let player;
   let game;
   const p1 = 1;
